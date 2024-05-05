@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+   <div class="nav-bar">
+    <div class="Icon">
+    <i class="bi bi-instagram"></i>
+    </div>
+  </div>
+  <div class="container">
+       <div class="row">
+         <div class="col-12">
+           <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                  <a class="navbar-brand d-flex align-items-center" href="#"><i class="ri-instagram-line"></i>
+                    <span class="instagram-header">Instagram</span>
+                  </a>
+                  <div class="dropdown d-grid gap-2 d-md-flex justify-content-md-end">
+                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <i>Create a new post</i>
+                     </button>
+                     <div class="nav-item dropdown">
+                       <div class="btn-group">
+                         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i>Settings</i>
+                         </button>
+                         <ul class="dropdown-menu dropdown-menu-end">
+                           <li><button class="dropdown-item" type="button">Profile</button></li>
+                           <li><button class="dropdown-item" type="button">Accessibility</button></li>
+                           <li><button class="dropdown-item" type="button">Privacy and data</button></li>
+                           <li><button class="dropdown-item text-danger" type="button">Logout</button></li>
+                         </ul>
+                       </div>
+                      </div>
+                  </div>
+                </div>
+           </nav>
+         </div>
+         <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+               <div class="modal-dialog">
+                 <div class="modal-content container-fluid">
+                   <div class="modal-header col-12">
+                     <h4 class="modal-title">Create a new post</h4>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                     <form>
+                       <div class="mb-3">
+                         <label for="message-text" class="col-form-label">Caption:</label>
+                         <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
+                       </div>
+                     </form>
+                     <div> 
+                       <button class="modal-icons-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
+                        <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4"/>
+                        <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.97 5.97 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1M2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0M14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0"/>
+                      </svg></button>
+                       <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                        <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                      </svg></button>
+                     </div>         
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-success" data-dismiss="modal">Publish</button>
+                   </div>
+                 </div>
+               </div>
+           </div>
+        </div>
+     </div>
+     <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+              <i class="ri-grid-line"></i>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+              <i class="ri-square-fill"></i>
+            </button>
+          </li>
+     </ul>
+     <div class="tab-content" id="myTabContent">
+         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="first row">
+                <div class="col">
+                  <img src="https://img.hellofresh.com/w_3840,q_auto,f_auto,c_fill,fl_lossy/hellofresh_website/es/cms/SEO/recipes/albondigas-caseras-de-cerdo-con-salsa-barbacoa.jpeg" alt="">
+                </div>
+                <div class="col">
+                  <img src="https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg" alt="">
+                </div>
+                <div class="col">
+                  <img src="https://www.lafallera.es/wp-content/uploads/2023/11/comida-economica-1080x675.jpg" alt="">
+                </div>
+              </div>
+              <div class="Second row">
+                <div class="col">
+                  <img src="https://s1.eestatic.com/2020/08/26/curiosidades/mascotas/mascotas-perros-mascotas_515959375_158488465_1706x960.jpg" alt="">
+                </div>
+                <div class="col">
+                  <img src="https://www.barakaldotiendaveterinaria.es/blog/wp-content/uploads/2021/11/tipos-de-mascotas-tener-en-casa.jpg" alt="">
+                </div>
+                <div class="col">
+                  <img src="https://www.respetmascotas.com/_Assets/img/181129-Imagen-AlimentacionMascotas.jpg" alt="">
+                </div>
+              </div>
+              <div class="Third row">
+                <div class="col">
+                  <img src="https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg" alt=""></div>
+                <div class="col">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cuesta_del_obispo_01.jpg/640px-Cuesta_del_obispo_01.jpg" alt="">
+                </div>
+                <div class="col">
+                  <img src="https://descargas.intef.es/recursos_educativos/It_didac/CCSS/1/09/01_que_es_un_paisaje/mountains-736886_640.jpg" alt=""></div>
+              </div>
+         </div>
+         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+           <div class="grid-1-image-row">
+               <div class="post1">
+                 <div class="card" style="width: 25rem;">
+                   <div class="card-header">
+                     <h3 class="card-title">Albondigas de cerdo</h3>
+                     <p class="header-pharagraph">08/26</p>
+                   </div>
+                   <img src="https://img.hellofresh.com/w_3840,q_auto,f_auto,c_fill,fl_lossy/hellofresh_website/es/cms/SEO/recipes/albondigas-caseras-de-cerdo-con-salsa-barbacoa.jpeg" alt="">
+                   <div class="card-body">
+                     <p class="card-text"><b>204 likes</b></p>
+                     <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="post2">
+                 <div class="card" style="width: 25rem;">
+                    <div class="card-header">
+                      <h3 class="card-title">Smashburger</h3>
+                      <p class="header-pharagraph">09/10</p>
+                    </div>
+                    <img src="https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg" alt="">
+                    <div class="card-body">
+                       <p><b>26985 likes</b></p>
+                       <p>This is an example of a very good photo that you can post on Instagram</p>
+                    </div>
+                  </div>
+                </div>  
+                <div class="post3">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header">
+                       <h3 class="card-title">Mountain</h3>
+                       <p class="header-pharagraph">06/10</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cuesta_del_obispo_01.jpg/640px-Cuesta_del_obispo_01.jpg" alt="">
+                    <div class="card-body">
+                      <p><b>1 like</b></p>
+                      <p>This is an example of a very good photo that you can post on Instagram</p>
+                    </div>
+                  </div>
+                </div>  
+           </div>  
+         </div>
+     </div>
+</body>
+</html>

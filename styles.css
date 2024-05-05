@@ -1,0 +1,34 @@
+.nav-tabs {
+    justify-content: center;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .grid-1-image-row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .post1 {
+    margin-top: 15px;
+    justify-content: center;
+    display: grid;
+ 
+ }
+ 
+ .post2 {
+    margin-top: 15px;
+    justify-content: center;
+    display: grid;
+ }
+ 
+ .post3 {
+    margin-top: 15px;
+    justify-content: center;
+    display: grid;
+ }
